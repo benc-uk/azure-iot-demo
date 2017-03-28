@@ -2,6 +2,8 @@
 This is a demo of IoT capabilities in Azure using IoT Hubs, Service Bus and Azure Function Apps.  
 Messages received at the IoT hub are placed on a Service Bus queue, from the queue they are picked up by the Azure Function and placed into blob storage as CSV files and into a table.
 
+![screenshot](https://cloud.githubusercontent.com/assets/14982936/24415800/96713852-13da-11e7-941b-ebf1607a57dc.png)
+
 The provided device simulator is written in Node.js and sends simple JSON messages including randomised wind speed data
 This is just example functionality, the Azure Function could carry out any processing you desire
 
