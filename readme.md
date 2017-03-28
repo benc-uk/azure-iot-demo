@@ -9,7 +9,7 @@ This is just example functionality, the Azure Function could carry out any proce
 
 
 ## Deployment
-Use supplied (azuredeploy.json) ARM template to deploy everything into Azure.  
+Use supplied [azuredeploy.json](azuredeploy.json) ARM template to deploy everything into Azure.  
 Please ensure you provide globally unique names for the IoT Hub, Function App and Service Bus, these are template parameters.  
 Deployed resources:
 * **IoT Hub** plus routes and Service Bus endpoints
@@ -40,4 +40,4 @@ Some helper CMD batch files are provided. Take copies of the *.sample* files and
 
 
 ## Cleanup
-Either remove the Azure resource group, or run the (cleanUp.js) Node.js script; providing storage account name and access-key, this will delete all output CSV files and the table output
+Either remove the Azure resource group, or run the [cleanup Node.js script](cleanUp.js); providing storage account name and access-key, this will delete all output CSV files and the table output
