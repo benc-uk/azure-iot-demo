@@ -14,7 +14,7 @@ Please ensure you provide globally unique names for the IoT Hub, Function App an
 Deployed resources:
 * **IoT Hub** plus routes and Service Bus endpoints
 * **Service Bus** and demo **queue**, plus send & listen access keys
-* **Function App** plus **App Service Plan**, function *(iotEventsDemo)* will be auto deployed from this Github repo, and connected to the Service Bus
+* **Function App** plus **App Service Plan**, the function *[iotEventsDemo](iotEventsDemo)* will be auto deployed from this Github repo, and connected to the Service Bus, via a connection string called 'iotdemo-connection'
 * **Storage Account** used by the Function App
 
 
@@ -30,6 +30,11 @@ Two small Node.js apps are provided:
 * [`RegDevice.js`](RegDevice.js) - Register a new device with the IoT hub and get the device key.
 * [`DeviceSimulator.js`](DeviceSimulator.js) - Main device simulator script, sends demo messages on a looping interval.  
 After cloning this repo you will need to run `npm install` to install all the dependencies 
+
+## Outputs
+The Function App puts outputs two things, both in the deployed storage account: 
+* CSV data in blob storage, the output container is called 'iot-messages'. One CSV blob per message. 
+* The same message is also added as a row enitity in an Azure Table, output table name is 'iottable'
 
 Register a new device e.g. *demo-device-1*, with the IoT hub using the connection string (put it in double quotes):
 ```
