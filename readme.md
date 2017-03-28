@@ -1,4 +1,3 @@
-
 # IoT Demo
 This is a demo of IoT capabilities in Azure using IoT Hubs, Service Bus and Azure Function Apps.  
 Messages received at the IoT hub are placed on a Service Bus queue, from the queue they are picked up by the Azure Function and placed into blob storage as CSV files and into a table.
@@ -30,6 +29,7 @@ After deployment the ARM template will provide four outputs:
 Two small Node.js apps are provided:
 * [`RegDevice.js`](RegDevice.js) - Register a new device with the IoT hub and get the device key.
 * [`DeviceSimulator.js`](DeviceSimulator.js) - Main device simulator script, sends demo messages on a looping interval.  
+After cloning this repo you will need to run `npm install` to install all the dependencies 
 
 Register a new device e.g. *demo-device-1*, with the IoT hub using the connection string (put it in double quotes):
 ```
