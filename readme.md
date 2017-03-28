@@ -36,6 +36,8 @@ The Function App puts outputs two things, both in the deployed storage account:
 * CSV data in blob storage, the output container is called 'iot-messages'. One CSV blob per message. 
 * The same message is also added as a row enitity in an Azure Table, output table name is 'iottable'
 
+
+## Example
 Register a new device e.g. *demo-device-1*, with the IoT hub using the connection string (put it in double quotes):
 ```
 node RegDevice.js "{iotHubConnStr}" demo-device-1
