@@ -1,0 +1,1 @@
+node .\DeviceSimulator.js <hub-name>.azure-devices.net <your-deviceid-1> <device-key> 1000
