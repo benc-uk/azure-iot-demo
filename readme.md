@@ -10,6 +10,8 @@ This is just example functionality, the Azure Function could carry out any proce
 
 ## Deployment
 Use supplied [azuredeploy.json](azuredeploy.json) ARM template to deploy everything into Azure.  
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+
 Please ensure you provide globally unique names for the IoT Hub, Function App and Service Bus, these are template parameters.  
 Deployed resources:
 * **IoT Hub** plus routes and Service Bus endpoints
