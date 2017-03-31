@@ -15,7 +15,7 @@ Please ensure you provide globally unique names for the IoT Hub, Function App an
 Deployed resources:
 * **IoT Hub** plus routes and Service Bus endpoints
 * **Service Bus** and demo **queue**, plus send & listen access keys
-* **Function App** plus **App Service Plan**, the function *[iotEventsDemo](iotEventsDemo/)* will be auto deployed from this Github repo, and connected to the Service Bus, via a connection string called 'iotdemo-connection'
+* **Function App** plus **App Service Plan**, the function *[iotEventsDemo](iotEventsDemo)* will be auto deployed from this Github repo, and connected to the Service Bus, via a connection string called 'iotdemo-connection'
 * **Storage Account** used by the Function App
 
 
