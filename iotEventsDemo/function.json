@@ -1,12 +1,12 @@
 {
   "bindings": [
     {
+      "type": "eventHubTrigger",
       "name": "myQueueItem",
-      "type": "serviceBusTrigger",
       "direction": "in",
-      "queueName": "demo-queue",
-      "connection": "iotdemo-connection",
-      "accessRights": "Listen"
+      "path": "change-me-to-your-iot-hub-name",
+      "connection": "iothub-connection",
+      "consumerGroup": "$Default"
     },
     {
       "type": "blob",
